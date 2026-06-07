@@ -78,3 +78,10 @@ testimonialSection.addEventListener("touchend", (e) => {
 
 startAutoSlide();
 updateCarousel();
+
+const hamburger = document.getElementById("hamburger");
+const navContent = document.getElementById("nav-content");
+
+hamburger.addEventListener("click", () => {
+    navContent.classList.toggle("active");
+});

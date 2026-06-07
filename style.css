@@ -54,6 +54,40 @@ body {
     transform: scale(1.2);
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar .nav-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+        background: #311b00;
+        gap: 15px;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .navbar .nav-content.active {
+        display: flex;
+    }
+}
+
 /* Navbar E */
 
 /* Home S */
